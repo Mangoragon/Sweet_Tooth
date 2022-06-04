@@ -1,0 +1,31 @@
+header{
+    height:100px;
+    background-color: #F7F1F0;
+}
+nav{display: list-item;
+    color: black;
+    height: 20px;
+    background-color:#C3A6A0;
+    text-align: center;
+    letter-spacing: 20px;
+    padding: 10px;
+}
+a.nav:hover{
+    color: black;
+    background-color: whitesmoke;
+    letter-spacing: 30px;
+}
+
+.container{
+    padding: 10%;
+    text-align: center;
+    display: flex;
+    justify-items: center;
+}
+img{
+    width: 350px;
+    height: 350px;
+}
+.name{
+    float: right;
+}
