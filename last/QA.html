@@ -8,20 +8,67 @@
     <link rel="stylesheet" href="QA.css">
 </head>
 <body>
+
     <header>
-        <div class="header">
-            <a id="logo" href="me.html">ST</a>
-        </div>
+      <a class="logo" href="me.html">ST</a>
     </header>
+  
+
     <nav>
-        <div class="nav">
-            <a href="me.html">首頁</a>
-            <a class="nav" href="about.html">關於</a>
-            <a class="nav" href="products.html">產品介紹</a>
-            <a class="nav" href="">訂購須知</a>
-            <a class="nav" href="">會員中心</a>
-            <a class="nav" href="QA.html">常見問題</a>
-        </div>
+        <a href="me.html">首頁</a>
+        <a href="about.html">關於</a>
+        <a href="products.html">產品介紹</a>
+        <a href="">訂購須知</a>
+        <a href="">會員中心</a>
+        <a href="QA.html">常見問題</a>
     </nav>
+    
+    <main>
+        <div class="layout">
+            <div class="accordion">
+                <div class="accordion__question">
+                    <p>Where is Taj Mahal located?</p>
+      
+                </div>
+                <div class="accordion__answer">
+                    <p>Taj Mahal is located in Agra, Uttar Pradesh.</p>
+      
+                </div>
+            </div>
+            <div class="accordion">
+                <div class="accordion__question">
+                    <p>How many planets are there in solar system?</p>
+      
+                </div>
+                <div class="accordion__answer">
+                    <p>
+                      There are eight planets in solar system. 
+                      Mercury, Venus, Earth, Mars, Jupiter, Saturn, 
+                      Uranus, and Neptune.
+                    </p>
+      
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <h5>Copyrgiht @ 2022 All rights reserved</h5>
+      </footer>
+    
+  
+    <script>
+        let answers=document.querySelectorAll(".accordion");
+        answers.forEach((event)=>{
+            event.addEventListener('click',()=>{
+                if(event.classList.contains("active")){
+                    event.classList.remove("active");
+                }
+                else{
+                    event.classList.add("active");
+                }
+            })
+        })
+    </script>
 </body>
 </html>

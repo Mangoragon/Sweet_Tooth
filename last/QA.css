@@ -1,6 +1,9 @@
-*{
-    box-sizing: border-box;
+body{
+    background-color: white;
+    margin: 0px;
 }
+
+
 header{
     height:100px;
     background-color: #F7F1F0;
@@ -8,42 +11,75 @@ header{
     font-size: 50px;
     text-align: center;
     line-height: 100px;
-}
-#logo{
-    width: 50px;
-    height: 50px;
-    text-decoration: none;
+
+  }
+
+.logo{
     color: black;
+    text-decoration: none;
 }
 
-nav{
-    display: inline-block;
-    color: black;
-    height: 50px;
-    background-color:#C3A6A0;
+  nav{
+    font-family: Arial;
+    background-color: #C3A6A0;
+
     text-align: center;
-    letter-spacing: 20px;
+  }
+  
+  nav a {
+      padding: 14px 16px;
+      display: inline-block;
+      text-decoration: none;
+      color: black;
+      
+  }
+   nav a:hover{
+       background-color: whitesmoke;
+       color: black;
+   }
+
+    
+   
+   footer{
+    color: white;
+    text-align: center;
+    background-color: #444444;
     padding: 10px;
-    width: 100%;
+    
 }
-nav a {
-    display: inline-block;
-    text-decoration: none;
-}
-nav a:link{
-    color: black;
-}
-nav a:hover {
-    background-color: whitesmoke;
-    letter-spacing: 20px;
-    color: black;
-    height: 20px;
-}
-nav a:visited{
-    color: black;
-}
-a.nav:hover{
-    color: black;
-    background-color: whitesmoke;
-    letter-spacing: 30px;
-}
+        .layout{
+            width: 500px;
+            margin: auto;
+        }
+        .accordion{
+            padding: 15px;
+            margin-top: 20px;
+            margin-bottom: 20px;
+            background: rgb(214, 186, 142);
+            border-radius: 20px;
+        }
+        .accordion__question p{
+            margin: 5px;
+            padding: 0;
+            font-family: Verdana;
+            font-size: 14px;
+        }
+        .accordion__answer p{
+            margin: 5px;
+            padding: 10px;
+            font-size: 14px;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            color: rgb(255, 255, 255);
+            background: rgb(232, 214, 184);
+            border-radius: 10px; 
+        }
+        .accordion:hover{
+            cursor: pointer;
+        }
+        .accordion__answer {
+            display: none;
+        } 
+        .accordion.active .accordion__answer {
+            display: block;
+        }
+   
