@@ -7,7 +7,7 @@ body{
 header{
     height:100px;
     background-color: #F7F1F0;
-    font-family: Muyao-Softbrush;
+    font-family: 'Grandstander', cursive;
     font-size: 50px;
     text-align: center;
     line-height: 100px;
@@ -55,7 +55,7 @@ header{
             padding: 15px;
             margin-top: 20px;
             margin-bottom: 20px;
-            background: rgb(214, 186, 142);
+            background: #eae4e9;
             border-radius: 20px;
         }
         .accordion__question p{
@@ -63,14 +63,15 @@ header{
             padding: 0;
             font-family: Verdana;
             font-size: 14px;
+            color :#444444;
         }
         .accordion__answer p{
             margin: 5px;
             padding: 10px;
             font-size: 14px;
             font-family: Verdana, Geneva, Tahoma, sans-serif;
-            color: rgb(255, 255, 255);
-            background: rgb(232, 214, 184);
+            color: #444444;
+            background: #fbf7fa;
             border-radius: 10px; 
         }
         .accordion:hover{
