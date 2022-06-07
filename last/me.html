@@ -16,15 +16,47 @@
     <nav>
         <div class="nav">
             <a href="about.html">關於</a>
-            <a href="products.html">產品介紹</a>
+            <a href="cinamonProduct.html">產品介紹</a>
             <a href="Ordering information.html">訂購須知</a>
-            <a href="">會員中心</a>
+            <a href="member.html">會員中心</a>
             <a href="QA.html">常見問題</a>
         </div>
     </nav>
     <main>
         <div class="main">
-            <div class="news"><img id="news" src="pic\new.jpg" alt="news"></div>
+            
+            <div class="slideshow-container">
+
+                <div class="mySlides fade">
+                  <div class="numbertext"></div>
+                  <img src="pic/news1.jpg" style="width:100%">
+                  <div class="text"></div>
+                </div>
+                
+                <div class="mySlides fade">
+                  <div class="numbertext"></div>
+                  <img src="pic/news2.jpg" style="width:100%">
+                  <div class="text"></div>
+                </div>
+                
+                <div class="mySlides fade">
+                  <div class="numbertext"></div>
+                  <img src="pic/news3.jpg" style="width:100%">
+                  <div class="text"></div>
+                </div>
+                
+                <a class="prev" onclick="plusSlides(-1)">❮</a>
+                <a class="next" onclick="plusSlides(1)">❯</a>
+                
+                </div>
+                <br>
+                
+                <div style="text-align:center">
+                  <span class="dot" onclick="currentSlide(1)"></span> 
+                  <span class="dot" onclick="currentSlide(2)"></span> 
+                  <span class="dot" onclick="currentSlide(3)"></span> 
+                </div>
+                
             <div class="productsbox">
                 <h1>熱銷排行榜</h1>
                 <div class="products"><img id="one" src="pic\1.jpg" alt="one"></div>
@@ -54,5 +86,27 @@
         </div>
     </footer>
 </div>
+
+<script>
+    let slideIndex = 0;
+    showSlides();
+    
+    function showSlides() {
+      let i;
+      let slides = document.getElementsByClassName("mySlides");
+      let dots = document.getElementsByClassName("dot");
+      for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";  
+      }
+      slideIndex++;
+      if (slideIndex > slides.length) {slideIndex = 1}    
+      for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+      }
+      slides[slideIndex-1].style.display = "block";  
+      dots[slideIndex-1].className += " active";
+      setTimeout(showSlides, 3000); // Change image every 3 seconds
+    }
+    </script>
 </body>
 </html>
