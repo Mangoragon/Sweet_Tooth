@@ -46,12 +46,24 @@ img:hover {
     
     }
    
-footer {
-    background-color: #444444;
-    color: beige;
-    text-align: center;
-    padding: 20px;
-}
+    footer{
+        color: white;
+        text-align: center;
+        background-color: #444444;
+        padding: 50px;
+        margin-top: 400px;
+      }
+      
+      footer p{
+        margin-top: -10px;
+      }
+      
+      .footer2{
+        background-color: burlywood;
+        height: 30px;
+        margin-top: -20px;
+      }
+      
 
    main{
        padding: 20px;
@@ -127,3 +139,8 @@ img{width: 150px;
     height: 150px;
 }
 
+/* Star rating */
+
+.checked {
+    color: orange;
+  }

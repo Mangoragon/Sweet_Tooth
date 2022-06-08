@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js"></script>
+  <script src="jquery.star-rating-svg.js"></script>
+  <script src="jquery.star-rating-svg.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/vue@2"></script>
+  <link rel="stylesheet" type="text/css" href="star-rating-svg.css">
+  <style>
+    body {
+      max-width: 80%;
+    }
+
+    .my-rating-6 {
+      display: flex;
+      justify-content: space-between;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="my-rating-6"></div>
+  <form action="123.jsp" method="get">
+	<input type="text" name="num" >
+	<input type="hidden" id="test" name="star" >
+	<input type = "submit" value = "確定送出">
+	<input type = "reset" value = "取消">  
+  </form>
+
+  <script>
+    var array = '';
+
+    $(".my-rating-6").starRating({
+      totalStars: 5,
+      emptyColor: 'lightgray',
+      hoverColor: 'salmon',
+      activeColor: 'cornflowerblue',
+      initialRating: 4,
+      strokeWidth: 0,
+      useGradient: false,
+      minRating: 1,
+      callback: function (currentRating, $el) {
+        alert('rated ' + currentRating);
+        console.log('DOM element ', $el);
+        $('#test').attr("value", currentRating);
+        array = currentRating;
+      }
+    });
+
+    // var app = new Vue({
+    //   el: '#test',
+    //   data: {
+    //     message: array
+    //   }
+    // })
+  </script>
+</body>
+
+</html>

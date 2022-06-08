@@ -1,3 +1,6 @@
+*{
+    box-sizing: border-box;
+}
 body{
     background-color: white;
     margin: 0px;
@@ -7,10 +10,11 @@ body{
 header{
     height:100px;
     background-color: #F7F1F0;
-    font-family: 'Grandstander', cursive;
+    font-family: Muyao-Softbrush;
     font-size: 50px;
     text-align: center;
     line-height: 100px;
+    padding-left: 10px;
 
   }
 
@@ -18,25 +22,33 @@ header{
     color: black;
     text-decoration: none;
 }
-
-  nav{
-    font-family: Arial;
+*:before, *:after {
+    margin: 0;
+    padding: 0;
+}
+.nav{
+    align-items: center;
+    border-bottom: 3px solid transparent;
+    color: #3c3535;
     background-color: #C3A6A0;
-
-    text-align: center;
-  }
+    display: flex;
+    height: 100%;
+    padding-left: 15px;
+    padding-right: 15px;
+    transition: all .18s ease-in-out;
+}
   
-  nav a {
+nav a {
       padding: 14px 16px;
       display: inline-block;
       text-decoration: none;
       color: black;
       
-  }
-   nav a:hover{
+}
+nav a:hover{
        background-color: whitesmoke;
        color: black;
-   }
+}
 main::after{
     margin: 0;
 }
@@ -62,6 +74,9 @@ a{
     width: 20px;
     height: 20px;
     border-radius: 10px;
+}
+#r{
+    color: red;
 }
 h2{
     margin: 0 0 1rem
@@ -121,4 +136,3 @@ footer{
     height: 30px;
     margin-top: -25px;
   }
-  

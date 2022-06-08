@@ -59,13 +59,23 @@ p{
 hr{
     width: 20cm;
 }
-.footer {
-    background-color: #444444;
-    color: beige;
+footer{
+    color: white;
     text-align: center;
-    padding: 30px;
-
-}
+    background-color: #444444;
+    padding: 50px;
+  }
+  
+  footer p{
+    margin-top: -10px;
+  }
+  
+  .footer2{
+    background-color: burlywood;
+    height: 30px;
+    margin-top: -20px;
+  }
+  
 .pad{
     padding-bottom: 500px;
 }
