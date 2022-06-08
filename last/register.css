@@ -100,7 +100,9 @@ img{width: 150px;
 div{
     justify-content: center
 }
-
+input:focus{
+    background-color: #e5d2cf5c;
+}
 .forget{
     font-size: 14px;
     padding-bottom: 10px;

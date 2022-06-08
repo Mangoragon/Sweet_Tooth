@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Member</title>
+    <link rel="stylesheet" href="cartpage.css">
+</head>
+<body>
+    <header>
+        <a class="logo" href="me.html">ST</a>
+    </header>
+      
+        <nav>
+          <a href="me.html">首頁</a>
+          <a href="about.html">關於</a>
+          <a href="cinamonProduct.html">產品介紹</a>
+          <a href="Ordering information.html">訂購須知</a>
+          <a href="member.html">會員中心</a>
+          <a href="QA.html">常見問題</a>
+      </nav>
+    <main>
+        <div id="app">
+            <div class="container">
+                <div class="item_header">
+                    <div class="item_detail">商品</div>
+                    <div class="price">單價</div>
+                    <div class="count">數量</div> 
+                    <div class="amount">總計</div>
+                    <div class="operate">操作</div>
+                </div>
+                <div class="item_container" v-for="(item, index) in itemList" :key="item.id" >
+                    <div class="item_header item_body">
+                            <div class="item_detail">
+                                <img v-bind:src="item.imgUrl" alt="">
+                                <div class="name">{{item.itemName}}</div>
+                            </div>
+                            
+                            <div class="price"><span>$</span>{{item.price}}</div>
+                            <div class="count">
+                                <button @click="handleSub(item)">-</button>
+                                {{item.count}}
+                                <button @click="handlePlus(item)">+</button>
+                            </div> 
+                            <div class="amount">{{item.price * item.count}}</div>
+                            <div class="operate">
+                                <button @click="handledelete(index)">刪除</button>
+                            </div>
+                    </div>
+            </div>
+                </div>
+            </div>
+        </div>
+        
+    <footer>
+        <p>Sweet Tooth - ST</p>
+        <p>Phone : (+886)- 912345678 </p>
+        <p>Email : example.ex@gmail.com </p>
+        <p>Copyrgiht @ 2022 All rights reserved</p>
+    </footer>
+    <div class="footer2">
+        <p></p>
+    </div>
+    </main>
+</body>
+</html

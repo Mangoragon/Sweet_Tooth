@@ -7,16 +7,16 @@ body{
 header{
     height:100px;
     background-color: #F7F1F0;
-    font-family: Muyao-Softbrush;
+    font-family: 'Grandstander', cursive;
     font-size: 50px;
     text-align: center;
     line-height: 100px;
 
   }
-  .logo{
+
+.logo{
     color: black;
     text-decoration: none;
-    font-family: 'Grandstander', cursive;
 }
 
   nav{
@@ -38,44 +38,56 @@ header{
        color: black;
    }
 
-.container{
-    padding: 7% 35%;
-    text-align: center;
-    display: flex;
-    justify-items: center;
-}
-img{
-    width: 350px;
-    height: 350px;
-}
-
-button {
-    background-color: #1b301bb3;
-    border: none;
-    color: white;
-    padding: 15px 32px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-    margin: 4px 2px;
-    cursor: pointer;
-    border-radius: 20px;
-  }
-  footer{
+   
+footer{
     color: white;
     text-align: center;
     background-color: #444444;
     padding: 50px;
     margin-top: 400px;
-    }
-      
-footer p{
+  }
+  
+  footer p{
     margin-top: -10px;
-}
-.footer2{
+  }
+  
+  .footer2{
     background-color: burlywood;
     height: 30px;
     margin-top: -20px;
-}
+  }
   
+
+  .item_header{
+    display: flex;
+    width: 1000px;
+    margin: 0 auto;
+    height: 30px;
+    background-color: #fff;
+    border-radius: 3px;
+    padding-left: 10px;
+}
+.item_header div{
+    width: 200px;
+    color: #888;
+    line-height: 30px;
+}
+.item_header .item_detail{
+    width: 50%;
+}
+.item_body{
+    margin-top: 20px;
+    height: 100px;
+    align-items: center;    
+}
+.item_detail img{
+    width: 80px;
+    height: 80px;
+    border-radius: 3px;
+    /* margin-top: 10px; */
+    float: left;
+}
+.item_detail .name{
+    margin-left: 100px;
+    margin-top: 20px;
+} 
