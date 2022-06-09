@@ -48,7 +48,10 @@ img{
     width: 350px;
     height: 350px;
 }
-
+#num{
+    text-align: center;
+    width: 70px;
+}
 button {
     background-color: #1b301bb3;
     border: none;

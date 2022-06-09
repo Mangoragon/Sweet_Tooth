@@ -43,5 +43,21 @@
     </div>
 </div>     
  
+<script>
+    function minusNum(value)
+     {
+         var value = Number(document.getElementById('num').value);
+         
+         if(value != 1)
+         {
+             document.getElementById('num').value=value-1;
+         }
+     }
+
+     function addNum(){
+         var value = Number(document.getElementById('num').value);
+         document.getElementById('num').value=value+1;
+     }
+ </script>
 </body>
 </html>

@@ -30,6 +30,11 @@
         
             <h3 class="name">肉桂捲</h3><br>
             <p class="name">discription</p>
+            <div class="button">
+                <input type="button" class="num-buttom" value="-" id="btnOne" onclick="minusNum()">
+                <input type="text" id="num" class="number" value="1">
+                <input type="button" class="num-buttom" value="+" id="btnTwo" onclick="addNum()">
+            </div>
             <a href="cartpage.html"><button type="button">加入購物車</button></a>
         </div>
     </div>
@@ -43,5 +48,21 @@
 <div class="footer2">
     <p></p>
 </div>
+<script>
+    function minusNum(value)
+     {
+         var value = Number(document.getElementById('num').value);
+         
+         if(value != 1)
+         {
+             document.getElementById('num').value=value-1;
+         }
+     }
+
+     function addNum(){
+         var value = Number(document.getElementById('num').value);
+         document.getElementById('num').value=value+1;
+     }
+ </script>
 </body>
 </html>
