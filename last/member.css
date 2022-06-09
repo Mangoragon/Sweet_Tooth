@@ -16,10 +16,6 @@ header{
     width: 100px;
     height: 100px;
     }
-.logo{
-    color: black;
-    text-decoration: none;
-    }
 
   nav{
     font-family: Arial;
@@ -63,7 +59,7 @@ a{
     border-radius: 10px;
 }
 h2{
-    margin: 0 0 1rem
+    margin-top: 30px;
 }
 p{
     margin: 0 0 1.55rem;
