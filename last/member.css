@@ -12,7 +12,10 @@ header{
     text-align: center;
     line-height: 100px;
     }
-
+#logo{
+    width: 100px;
+    height: 100px;
+    }
 .logo{
     color: black;
     text-decoration: none;
