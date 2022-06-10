@@ -6,10 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Member</title>
     <link rel="stylesheet" href="cartpage.css">
-<<<<<<< HEAD
     <script src="cart.js"></script>
-=======
->>>>>>> f3d889eef77d0d0366dbf208cc12ef8f777b11f1
 </head>
 <body>
     <header>
@@ -25,7 +22,6 @@
           <a href="QA.html">常見問題</a>
       </nav>
     <main>
-<<<<<<< HEAD
       <div class="wrapper">
         <div class="project">
           <div class="shop">
@@ -66,39 +62,6 @@
           </div>
         </div>
       </div>
-=======
-        <div id="app">
-            <div class="container">
-                <div class="item_header">
-                    <div class="item_detail">商品</div>
-                    <div class="price">單價</div>
-                    <div class="count">數量</div> 
-                    <div class="amount">總計</div>
-                    <div class="operate">操作</div>
-                </div>
-                <div class="item_container" v-for="(item, index) in itemList" :key="item.id" >
-                    <div class="item_header item_body">
-                            <div class="item_detail">
-                                <img v-bind:src="item.imgUrl" alt="">
-                                <div class="name">{{item.itemName}}</div>
-                            </div>
-                            
-                            <div class="price"><span>$</span>{{item.price}}</div>
-                            <div class="count">
-                                <button @click="handleSub(item)">-</button>
-                                {{item.count}}
-                                <button @click="handlePlus(item)">+</button>
-                            </div> 
-                            <div class="amount">{{item.price * item.count}}</div>
-                            <div class="operate">
-                                <button @click="handledelete(index)">刪除</button>
-                            </div>
-                    </div>
-            </div>
-                </div>
-            </div>
-        </div>
->>>>>>> f3d889eef77d0d0366dbf208cc12ef8f777b11f1
         
     <footer>
         <p>Sweet Tooth - ST</p>
