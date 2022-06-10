@@ -17,38 +17,32 @@ header{
     padding-left: 10px;
 
   }
+  #logo{
+    width: 100px;
+    height: 100px;
+    }
 
-.logo{
-    color: black;
-    text-decoration: none;
-}
 *:before, *:after {
     margin: 0;
     padding: 0;
 }
-.nav{
-    align-items: center;
-    border-bottom: 3px solid transparent;
-    color: #3c3535;
+nav{
+    font-family: Arial;
     background-color: #C3A6A0;
-    display: flex;
-    height: 100%;
-    padding-left: 15px;
-    padding-right: 15px;
-    transition: all .18s ease-in-out;
-}
+
+    text-align: center;
+    }
   
-nav a {
+  nav a {
       padding: 14px 16px;
       display: inline-block;
       text-decoration: none;
       color: black;
-      
-}
-nav a:hover{
+    }
+   nav a:hover{
        background-color: whitesmoke;
        color: black;
-}
+   }
 main::after{
     margin: 0;
 }
@@ -56,6 +50,7 @@ main::after{
     content: " ";
     display: table;
 }
+
 .main{
     position: relative;
     padding-top: 30px;
@@ -79,13 +74,42 @@ a{
     color: red;
 }
 h2{
-    margin: 0 0 1rem
+    margin-top: 30px;
 }
 p{
     margin: 0 0 1.55rem;
 }
 ul{
     padding-inline-start: 0;
+}
+article{
+    float: left;
+    width: 20%;
+    margin: 0;
+    text-align: center;
+}
+
+article ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 170px;
+    background-color: white;
+  }
+  
+article li a {
+    display: block;
+    color: #000;
+    padding: 8px 16px;
+    text-decoration: none;
+  }
+  
+article li a:hover:not(.active) {
+    background-color: #555;
+    color: white;
+  }
+hr{
+    margin: 0;
 }
 .required{
    position: relative;
@@ -100,7 +124,9 @@ img{width: 150px;
 div{
     justify-content: center
 }
-
+input:focus{
+    background-color: #e5d2cf5c;
+}
 .forget{
     font-size: 14px;
     padding-bottom: 10px;

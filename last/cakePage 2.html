@@ -4,13 +4,15 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>product</title>
-    <link rel="stylesheet" type="text/css" href="cinamonPage.css"> 
+    <title>心之和綜合乳酪</title>
+    <link rel="stylesheet" type="text/css" href="cinamonPage.css">
+    <script src="zoom.js"></script>
+    
 </head>
 <body>
 <div class="body">
     <header>
-        <a class="logo" href="me.html">ST</a>
+        <a class="logo" href="me.html"><img id="logo" src="pic\logo.PNG"></a>
       </header>
     
   
@@ -26,14 +28,121 @@
 <div class="container">
     <div class="box">
         <div>
-            <img src="pic/Cake 2.jpg" alt="">
-        
-            <h3 class="name">蛋糕2</h3><br>
-            <p class="name">Cake 2</p>
-            <button type="button">加入購物車</button>
+            <div id="zoomC" style="background-image: url('pic/Cake 2.jpg');"></div>
+            <h3 class="name">- 心之和 -<br>綜合 COOL酪</h3>
+            <h4>$700</h4>
+            <p class="name">
+                <h4>商品說明</h4>
+                <span id="discription">屏東人氣伴手禮-心之和排名No.1綜合COOL酪!<br>
+                    採用未成熟的Cheese，細膩柔軟且不添加防腐劑。<br>冰淇淋口感不需多咬，用嘴輕輕一抿就化掉，底部餅皮滋味鹹香鹹香，夏天來上一片，送禮自用兩相宜。
+                </span>
+            </p>
+            <div class="button">
+                <input type="button" class="num-buttom" value="-" id="btnOne" onclick="minusNum()">
+                <input type="text" id="num" class="number" value="1">
+                <input type="button" class="num-buttom" value="+" id="btnTwo" onclick="addNum()">
+            </div>
+            <a href="cartpage.html"><button type="button">加入購物車</button></a><br>
+            <a href="cakeProduct.html"><img id="leave" src="pic\leave.webp"></a>
+
         </div>
     </div>
 </div>     
- 
+<div class="userRating">
+    <div class="ratingContainer">
+
+        <span class="heading">User Rating</span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star"></span>
+        <p>4.1 average based on 254 reviews.</p>
+        <hr style="border:3px solid #f1f1f1">
+        
+        <div class="row">
+          <div class="side">
+            <div>5 star</div>
+          </div>
+          <div class="middle">
+            <div class="bar-container">
+              <div class="bar-5"></div>
+            </div>
+          </div>
+          <div class="side right">
+            <div>150</div>
+          </div>
+          <div class="side">
+            <div>4 star</div>
+          </div>
+          <div class="middle">
+            <div class="bar-container">
+              <div class="bar-4"></div>
+            </div>
+          </div>
+          <div class="side right">
+            <div>63</div>
+          </div>
+          <div class="side">
+            <div>3 star</div>
+          </div>
+          <div class="middle">
+            <div class="bar-container">
+              <div class="bar-3"></div>
+            </div>
+          </div>
+          <div class="side right">
+            <div>15</div>
+          </div>
+          <div class="side">
+            <div>2 star</div>
+          </div>
+          <div class="middle">
+            <div class="bar-container">
+              <div class="bar-2"></div>
+            </div>
+          </div>
+          <div class="side right">
+            <div>6</div>
+          </div>
+          <div class="side">
+            <div>1 star</div>
+          </div>
+          <div class="middle">
+            <div class="bar-container">
+              <div class="bar-1"></div>
+            </div>
+          </div>
+          <div class="side right">
+            <div>20</div>
+          </div>
+        </div>   
+    </div >
+</div> 
+<footer>
+    <p>Sweet Tooth - ST</p>
+    <p>Phone : (+886)- 912345678 </p>
+    <p>Email : example.ex@gmail.com </p>
+    <p>Copyrgiht @ 2022 All rights reserved</p>
+</footer>
+<div class="footer2">
+      <p></p>
+</div>
+<script>
+    function minusNum(value)
+     {
+         var value = Number(document.getElementById('num').value);
+         
+         if(value != 1)
+         {
+             document.getElementById('num').value=value-1;
+         }
+     }
+
+     function addNum(){
+         var value = Number(document.getElementById('num').value);
+         document.getElementById('num').value=value+1;
+     }
+ </script>
 </body>
 </html>

@@ -11,7 +11,11 @@ header{
     font-size: 50px;
     text-align: center;
     line-height: 100px;
-
+  }
+  #logo{
+    width: 100px;
+    height: 100px;
+    /*border-radius: 30px;*/
   }
   .logo{
     color: black;
@@ -44,11 +48,23 @@ header{
     display: flex;
     justify-items: center;
 }
-img{
+#zoomC {
     width: 350px;
     height: 350px;
-}
+    margin-left: 30px;
+    margin-top: -20px;
+    background-position: center;
+    background-size: cover;
+  }
+#discription{
+    font-family: 微軟正黑體;
+    color: #B2691E;
+} 
 
+#num{
+    text-align: center;
+    width: 70px;
+}
 button {
     background-color: #1b301bb3;
     border: none;
@@ -62,5 +78,113 @@ button {
     cursor: pointer;
     border-radius: 20px;
   }
+  #leave{
+      width: 30px;
+      height: 30px;
+      position: relative;
+      left: 160px;top: 20px;
+  }
 
+  footer{
+    color: white;
+    text-align: center;
+    background-color: #444444;
+    padding: 50px;
+    margin-top: 200px;
+    }
+      
+footer p{
+    margin-top: -10px;
+}
+.footer2{
+    background-color: burlywood;
+    height: 30px;
+    margin-top: -20px;
+}
+
+/* User rating*/ 
+.userRating  {
+  box-sizing: border-box;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.ratingContainer {
+    font-family: Arial;
+    margin: 0 auto; /* Center website */
+    
+    padding: 20px;
+  }
   
+  .heading {
+    font-size: 25px;
+    margin-right: 25px;
+  }
+  
+  .fa {
+    font-size: 25px;
+  }
+  
+  .checked {
+    color: orange;
+  }
+  
+  /* Three column layout */
+  .side {
+    float: left;
+    width: 15%;
+    margin-top:10px;
+  }
+  
+  .middle {
+    margin-top:10px;
+    float: left;
+    width: 70%;
+  }
+  
+  /* Place text to the right */
+  .right {
+    text-align: right;
+  }
+  
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  /* The bar container */
+  .bar-container {
+    width: 100%;
+    background-color: #f1f1f1;
+    text-align: center;
+    color: white;
+  }
+  
+  .bar-5 {
+      width: 60%;
+      height: 18px;
+      background-color: #C3A6A0;
+  }
+  
+  .bar-4 {
+      width: 30%;
+      height: 18px;
+      background-color: #C3A6A0;
+  }
+  .bar-3 {
+      width: 10%;
+      height: 18px;
+      background-color: #C3A6A0;
+  }
+  .bar-2 {
+      width: 4%;
+      height: 18px;
+      background-color: #C3A6A0;
+  }
+  .bar-1 {
+      width: 15%;
+      height: 18px;
+      background-color: #C3A6A0;
+  }

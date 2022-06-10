@@ -2,15 +2,18 @@ body {
     margin: 0px;
 }
 header {
-    float: left;
-    width: 70%;
-    margin: 20px 300px;
-    height: 80px;
-    line-height: 80px;
-    font-family: 'Grandstander', cursive;
+    height:100px;
     background-color: #F7F1F0;
-    border: double burlywood;
-}
+    font-family: Muyao-Softbrush;
+    font-size: 50px;
+    text-align: center;
+  }
+
+#logo{
+    width: 100px;
+    height: 100px;
+    /*border-radius: 30px;*/
+  }
 nav {
     background-color:#C3A6A0;
     text-align: center;
@@ -32,10 +35,12 @@ nav a:visited{
     color: black;
 }
 #stpic{
-    width: 100px;
-    height: 80px;
-    border: 2px dotted #444444;
-    border-radius: 100px;
+    width: 140px;
+    height: 120px;
+    border: 2px dotted #767272;
+    border-radius: 40px;
+    padding: 20px;
+    margin: 30px;
 }
 
 .main{
@@ -44,11 +49,16 @@ nav a:visited{
 }
 
 .st{
-    font-family: 'Grandstander', cursive;
+    font-family: Muyao-Softbrush;
+;
+    margin-top: 40px;
  }
  
-p{
-    font-size: 18px;
+.content{
+    font-size: 16px;
+    font-family: 微軟正黑體;
+    letter-spacing: 3px;
+    line-height: 30px;
 }
 
 
