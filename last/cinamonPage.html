@@ -50,9 +50,11 @@
     </div>
 </div>     
 
+
+
 <div class="userRating">
     <div class="ratingContainer">
-
+  
         <span class="heading">User Rating</span></br>
         <hr style="border:3px solid #C3A6A0"></br>
         <form action="">
@@ -64,29 +66,31 @@
           <div class="name">
             <div class="text">Rating :</div>
         </div>  
-          <dev class="starContainer">
-            
-            <div class="rate">
-              <input type="radio" id="star5" name="rate" value="5" />
-              <label for="star5" title="text">5 stars</label>
-              <input type="radio" id="star4" name="rate" value="4" />
-              <label for="star4" title="text">4 stars</label>
-              <input type="radio" id="star3" name="rate" value="3" />
-              <label for="star3" title="text">3 stars</label>
-              <input type="radio" id="star2" name="rate" value="2" />
-              <label for="star2" title="text">2 stars</label>
-              <input type="radio" id="star1" name="rate" value="1" />
-              <label for="star1" title="text">1 star</label>
-            </div>
-          </dev>
+        <div class="star">
+          <div class="star1" id="star1" value="5">★</div>
+          <div class="star1" id="star2" value="4">★</div>
+          <div class="star1" id="star3" value="3">★</div>
+          <div class="star1" id="star4" value="2">★</div>
+          <div class="star1" id="star5" value="1">★</div>
+      </div>
+      
+      <!-- form表單傳送資料用 -->
+      <form action="">
+          <input type="radio" name="star" value="1" id="score5" class="startScore">
+          <input type="radio" name="star" value="2" id="score4" class="startScore">
+          <input type="radio" name="star" value="3" id="score3" class="startScore">
+          <input type="radio" name="star" value="4" id="score2" class="startScore">
+          <input type="radio" name="star" value="5" id="score1" class="startScore">
+      </form>
+      <script src="star.js"></script>
           <br><br>
           <div class="comment_title">Commemt :</div>
-          <textarea id="comment" name placeholder></textarea>
+          <textarea rows="5" cols="80" ></textarea><br>
           <input type="submit" value="送出" class="combut">
       </form>
         </br>
     </div >
-</div>
+  </div> 
 <footer>
     <p>Sweet Tooth - ST</p>
     <p>Phone : (+886)- 912345678 </p>

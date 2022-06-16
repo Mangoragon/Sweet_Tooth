@@ -1,0 +1,65 @@
+form > input[type="radio"].startScore{
+    position: absolute;
+    top: -99999px;
+    left: -99999px;
+    z-index: -99999;
+}
+.star{
+    display: flex;
+    flex-direction: row-reverse;
+    width: 300px;
+    position: relative;
+    left: 10px;
+}
+.star .star1{
+    color:#ccc;
+    font-size: 40px;
+    cursor: pointer;
+    margin:0 8px;
+}
+#star5:hover{
+    color:#91663d;
+}
+#star4:hover{
+    color:#91663d;
+}
+#star4:hover ~ #star5{
+    color:#91663d;
+}
+
+#star3:hover{
+    color:#91663d;
+}
+#star3:hover ~ #star4{
+    color:#91663d;
+}
+#star3:hover ~ #star5{
+    color:#91663d;
+}
+#star2:hover{
+    color:#91663d;
+}
+#star2:hover ~#star3{
+    color:#91663d;
+}
+#star2:hover ~ #star4{
+    color:#91663d;
+}
+#star2:hover ~ #star5{
+    color:#91663d;
+}
+#star1:hover{
+    color:#91663d;
+}
+#star1:hover ~#star2{
+    color:#91663d;
+}
+#star1:hover ~#star3{
+    color:#91663d;
+}
+#star1:hover ~#star4{
+    color:#91663d;
+}
+#star1:hover ~#star5{
+    color:#91663d;
+}

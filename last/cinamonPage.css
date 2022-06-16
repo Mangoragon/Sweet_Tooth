@@ -123,47 +123,75 @@ footer p{
   }
   
   /* Star rating */
-.starContainer{
-    margin: 0;
-    padding: 0;
+  form > input[type="radio"].startScore{
+    position: absolute;
+    top: -99999px;
+    left: -99999px;
+    z-index: -99999;
 }
-.rate {
-    float: left;
-    height: 46px;
-    padding: 0 10px;
-    margin-left: -15px;
+
+.star{
+    display: flex;
+    flex-direction: row-reverse;
+    width: 300px;
+    position: relative;
+    left: -60px;
+  
 }
-.rate:not(:checked) > input {
-    position:absolute;
-    top:-9999px;
-}
-.rate:not(:checked) > label {
-    float:right;
-    width:1em;
-    overflow:hidden;
-    white-space:nowrap;
-    cursor:pointer;
-    font-size:30px;
+.star .star1{
     color:#ccc;
+    font-size: 40px;
+    cursor: pointer;
+    margin:0 8px;
 }
-.rate:not(:checked) > label:before {
-    content: '★ ';
+#star5:hover{
+    color:#91663d;
 }
-.rate > input:checked ~ label {
-    color: #ffc700;    
+#star4:hover{
+    color:#91663d;
 }
-.rate:not(:checked) > label:hover,
-.rate:not(:checked) > label:hover ~ label {
-    color: #deb217;  
+#star4:hover ~ #star5{
+    color:#91663d;
 }
-.rate > input:checked + label:hover,
-.rate > input:checked + label:hover ~ label,
-.rate > input:checked ~ label:hover,
-.rate > input:checked ~ label:hover ~ label,
-.rate > label:hover ~ input:checked ~ label {
-    color: #c59b08;
+
+#star3:hover{
+    color:#91663d;
+}
+#star3:hover ~ #star4{
+    color:#91663d;
+}
+#star3:hover ~ #star5{
+    color:#91663d;
+}
+#star2:hover{
+    color:#91663d;
+}
+#star2:hover ~#star3{
+    color:#91663d;
+}
+#star2:hover ~ #star4{
+    color:#91663d;
+}
+#star2:hover ~ #star5{
+    color:#91663d;
+}
+#star1:hover{
+    color:#91663d;
+}
+#star1:hover ~#star2{
+    color:#91663d;
+}
+#star1:hover ~#star3{
+    color:#91663d;
+}
+#star1:hover ~#star4{
+    color:#91663d;
+}
+#star1:hover ~#star5{
+    color:#91663d;
 }
   
+/* Form */
 .name .text {
   width: auto;
   flex: none;
@@ -191,12 +219,10 @@ footer p{
 .comment_title {
   font-size: 16px;
   color: #4e4d41;
-  margin-top: 10px;
+  margin-top: -20px;
 }
 
 form textarea {
-  margin-bottom: 5px;
-  width: 98%;
   font-size: 16px;
   color: #4e4d41;
   border: 1.5px solid #4e4d41;
