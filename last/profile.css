@@ -121,18 +121,11 @@ aside li a:hover:not(.active) {
 }
 .article{
     position: relative;left: 250px;top: 50px;
-<<<<<<< HEAD
-<<<<<<< HEAD
     width: 80%;
     margin-left: 250px;
     margin-top: -50px;
+    width: 100%;
 
-=======
-    width: 100%;
->>>>>>> f3d889eef77d0d0366dbf208cc12ef8f777b11f1
-=======
-    width: 100%;
->>>>>>> f3d889eef77d0d0366dbf208cc12ef8f777b11f1
 }
 #profile{
     text-align: center;

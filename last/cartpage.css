@@ -144,13 +144,13 @@ footer{
 	bottom: 20px;
 	right: 20px;
 	padding: 10px 25px;
-	background-color: #3a71a9;
-	color: white;
+	background-color: #e6d5d2;
+	color: #444444;
 	cursor: pointer;
 	border-radius: 5px;
 }
 .btn-area:hover {
-	background-color: #76bfb6;
+	background-color: #C3A6A0;
 	color: #fff;
 	font-weight: 600;
 }
@@ -181,7 +181,7 @@ footer{
 	font-size: 20px;
 }
 .right-bar a {
-	background-color: #76bfb6;
+	background-color: #e6d5d2;
 	color: #fff;
 	text-decoration: none;
 	display: block;
@@ -194,7 +194,7 @@ footer{
 	margin-right: 15px;
 }
 .right-bar a:hover {
-	background-color: #3972a7;
+	background-color: #C3A6A0;
 }
 @media screen and (max-width: 700px) {
 	.content h3 {

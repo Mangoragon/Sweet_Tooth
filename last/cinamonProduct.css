@@ -43,6 +43,15 @@ header{
        background-color: whitesmoke;
        color: black;
    }
+
+    #cart{
+    width: 30px;
+    height: 30px;
+    position: relative;
+    margin-top: 20px;
+    
+    }
+
 img:hover {
     opacity: 50%;
     transition: 0.5s ease;
