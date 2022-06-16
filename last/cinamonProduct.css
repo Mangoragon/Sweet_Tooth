@@ -24,6 +24,10 @@ header{
     text-decoration: none;
     font-family: 'Grandstander', cursive;
 }
+.logo img:hover{
+  opacity: 100%;
+    transform:scale(1);
+}
 
   nav{
     font-family: Arial;
