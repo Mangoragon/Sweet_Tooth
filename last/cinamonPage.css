@@ -198,14 +198,15 @@ footer p{
   color: #4e4d41;
   font-size: 16px;
   vertical-align: middle;
+  
 }
 
 .name input {
   flex: auto;
-  background: 0 0;
+
   color: #4e4d41;
   font-size: 16px;
-  border: none;
+ 
 }
 
 .name input:focus {

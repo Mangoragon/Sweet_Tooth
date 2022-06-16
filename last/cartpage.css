@@ -100,7 +100,8 @@ footer{
 .wrapper {
 	max-width: 1000px;
 	margin: 0 auto;
-  margin-top: 30px;
+ 	margin-top: 30px;
+	
 }
 
 .project {
@@ -139,6 +140,11 @@ footer{
 .content h4 {
 	margin-bottom: 50px;
 }
+
+.button{
+	margin-left: 70px;
+	margin-top: -18px;
+}
 .btn-area {
 	position: absolute;
 	bottom: 20px;
@@ -158,6 +164,7 @@ footer{
 	width: 40px;
 	padding: 5px;
 	text-align: center;
+	margin-top: -15px;
 }
 .btn-area i {
 	margin-right: 5px;

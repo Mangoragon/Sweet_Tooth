@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Member</title>
+    <title>Cart</title>
     <link rel="stylesheet" href="cartpage.css">
     <script src="cart.js"></script>
 </head>
@@ -30,7 +30,14 @@
               <div class="content">
                 <h3 >強強早 - 強強捲系列</h3>
                 <h4>Price: TW$125</h4>
-                <p class="unit">Quantity: <input name="" value="2"></p>
+                <div class="unit">
+                  <span>Quantity:</span> 
+                  <div class="button">
+                    <input type="button" class="num-buttom" value="-" id="btnOne" onclick="minusNum()">
+                    <input type="text" id="num" class="number" value="1" size="2">
+                    <input type="button" class="num-buttom" value="+" id="btnTwo" onclick="addNum()">
+                  </div>
+                </div>
                 <p class="btn-area"><i aria-hidden="true" class="fa fa-trash"></i> <span class="btn2">Remove</span></p>
               </div>
             </div>
@@ -39,7 +46,14 @@
               <div class="content">
                 <h3>- 食聚 - 綜合水果千層</h3>
                 <h4>Price: TW$140</h4>
-                <p class="unit">Quantity: <input name="" value="1"></p>
+                <div class="unit">
+                  <span>Quantity:</span> 
+                  <div class="button">
+                    <input type="button" class="num-buttom" value="-" id="btnOne" onclick="minusNum()">
+                    <input type="text" id="num" class="number" value="1" size="2">
+                    <input type="button" class="num-buttom" value="+" id="btnTwo" onclick="addNum()">
+                  </div>
+                </div>
                 <p class="btn-area"><i aria-hidden="true" class="fa fa-trash"></i> <span class="btn2">Remove</span></p>
               </div>
             </div>
@@ -48,7 +62,14 @@
               <div class="content">
                 <h3>- 好咖 - 泰式奶茶千層</h3>
                 <h4>Price: $160</h4>
-                <p class="unit">Quantity: <input name="" value="0"></p>
+                <div class="unit">
+                  <span>Quantity:</span> 
+                  <div class="button">
+                    <input type="button" class="num-buttom" value="-" id="btnOne" onclick="minusNum()">
+                    <input type="text" id="num" class="number" value="1" size="2">
+                    <input type="button" class="num-buttom" value="+" id="btnTwo" onclick="addNum()">
+                  </div>
+                </div>
                 <p class="btn-area"><i aria-hidden="true" class="fa fa-trash"></i> <span class="btn2">Remove</span></p>
               </div>
             </div>
@@ -73,5 +94,22 @@
         <p></p>
     </div>
     </main>
+
+    <script>
+      function minusNum(value)
+       {
+           var value = Number(document.getElementById('num').value);
+           
+           if(value != 1)
+           {
+               document.getElementById('num').value=value-1;
+           }
+       }
+  
+       function addNum(){
+           var value = Number(document.getElementById('num').value);
+           document.getElementById('num').value=value+1;
+       }
+   </script>
 </body>
 </html
