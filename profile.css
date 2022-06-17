@@ -114,5 +114,23 @@ article{
 article form{
     margin-top: 40px;
     margin-left: 325px;
+    color: #444444;
 }
 
+input{
+    margin-bottom: 10px;
+}
+.login{
+    display: inline-block;
+    text-align: center;
+}
+#login{
+    border: none;
+    color: rgba(41, 48, 47, 0.701);
+    padding: 10px 15px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 10px;
+}
