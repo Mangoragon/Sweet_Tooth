@@ -12,10 +12,11 @@ header{
     text-align: center;
     line-height: 100px;
     }
-#logo{
-    width: 100px;
-    height: 100px;
-    }
+
+    #logo{
+        width: 105px;
+        height: 105px;
+      }
 
   nav{
     font-family: Arial;
