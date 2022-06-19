@@ -54,6 +54,17 @@ h1{
     width: 100%;
     text-align: center;
 }
+.rank{
+  width: 80%;
+  height: 50px;
+  margin-left: 150px;
+}
+.rank_icon{
+  width: 50px;
+  height: 50px;
+  display: inline;
+  margin: 10px 150px;
+}
 
 .products{
     display:inline;
